@@ -1,28 +1,43 @@
-# Marketing Mix Modeling
+# Text Category Classification
 
 ### Business Problem Context
 
-The attached data is **weekly sales data (sales column)** and **marketing data** of TV, Radio and Digital channels in GRPs -Gross Rating Points (tv_grps, radio_grps, digital_grps). And the week's temperature data in the temp column.
+###  Data analysis and modelling assignment
 
-The idea is:
-- To quantify the effects of different marketing channels on sales
-- Calculate the Return on Investment (ROI) of each marketing channel
-- Optimize the budget for marketing campaigns.
-  
+- Consider yourself a Data Scientist in Utopia Analytics, where we create models for user content classification based on customers' data.
 
-Sales is probably a combination of **a baseline** (which comes from the business, brand, customer loyalty ...), **organic growth** (which can be some %/week), **seasonality* (which might come from temperature variation) and **marketing activities**
+- You are provided with files that contain the same data set in compressed JSONLines (data.jsonl.gz) and CSV (data.csv.gz) formats.
 
-You might need to study the concept of **marketing adstock** and how it relates to GRPs: adstock = function of (GRPs, diminishing, decay). 
+- The classification task is to predict the label (A or B) based on a sparse feature vector (fields x01 - xNN).
 
-In this particular case:
-- For TV, diminishing can be 120 to 150, decay can be 0.6 to 0.95
-- For Radio diminishing can be 150 to 180, decay can be 0.3 to 0.6
-- For Digital diminishing can be 70 to 100, decay can be 0.6 to 0.9
+- In addition, the data set includes metadata for each row: author (the one who produces inputs), annotator (people giving the label), and timestamp.
 
-### Missions:
-- Build predictive model(s) that can predict sales, given the available data
-- Estimate **the percentage of sales that is boosted by different marketing channels**
+- Process and analyze the provided data in terminal, Python, or with other tools.
 
-### Expectation:
-- Show the ability how to build models, validate models, and tune hyperparameters to select the best model(s)
-- Interpret the results with visualization.
+- Try to get results quickly, but be ready to provide more accurate results.
+
+###  Task 1
+
+- Implement and train a classifier that predicts the label from the features.
+
+- Use as quick and simple an approach as possible, but mention some ways to improve it.
+
+- Report the results using some appropriate scores.
+
+- Provide also the program code for your implementation.
+
+###  Task 2
+
+- Explore the data in whatever tools you are proficient with (Python/Pandas, R, Excel, etc.) and try to find issues that may impair the classification accuracy.
+
+- Report what you found and how (you can include e.g. screenshots, tables, plots, and code).
+
+- If you have any remaining ideas that you did not have time to test, mention those.
+
+###  Task 3
+
+- Try to fix at least one of the issues you found in Task 2 from the data
+
+- Repeat the classification task
+
+- Analyse and report the effect on the results.
