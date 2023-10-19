@@ -4,8 +4,6 @@
 
 ###  Data analysis and modelling assignment
 
-- Consider yourself a Data Scientist in Utopia Analytics, where we create models for user content classification based on customers' data.
-
 - You are provided with files that contain the same data set in compressed JSONLines (data.jsonl.gz) and CSV (data.csv.gz) formats.
 
 - The classification task is to predict the label (A or B) based on a sparse feature vector (fields x01 - xNN).
